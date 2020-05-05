@@ -1,6 +1,6 @@
 # Assignment - Testing node and git
 
-** Due: ** 
+** Due: Sun May 10, 11:59pm PT** 
 
 # Instructions
 
