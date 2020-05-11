@@ -3,7 +3,7 @@ const path = require('path');
 const people = `
 Name           |  NEUID   | Slack handle | github ID
 Brett Ritter   | ???      | @swiftone    | swiftone
-
+Shiyu Feng     | 001029987| @Shiyu Feng  | lingxiaolu18
 `.split('\n').filter( truthy => truthy );
 
 if (require.main === module) {
