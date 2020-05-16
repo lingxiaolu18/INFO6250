@@ -26,7 +26,7 @@ Create three HTML files in this directory
     * the page will list "Star Students"
     * 5 "students" will be listed (you make up their names)
     * Each student name should be link to `details.html` (using a RELATIVE path) with an `id=somenumber` as a query param (you make up the value of 'somenumber')
-      * Note that because our files are static this query param won't show any visual difference on the page, only in the browser url
+      * Notsser url
   * one file is `cats.html`
     * it loads the lists.css CSS file below using an ABSOLUTE path (but not fully qualified URL)
       * you will have to manage the path when loading the file since the css files are in a directory
@@ -36,7 +36,7 @@ Create three HTML files in this directory
     * Each cat name should be link to `details.html` (using a RELATIVE path) with an `id=somenumber` as a query param (you make up the value of 'somenumber')
       * Note that because our files are static this query param won't show any visual difference on the page, only in the browser url
   * one file is `details.html`
-    * details.html should NOT load lists.css, and instead load details.css as described below 
+    * details.html should NOT load lists.css, and instead load details.css as described below
     * This file will have a semantic block with an error header and an error message
       * You decide how to indicate that semantic meaning - there is no existing HTML tag for that
     * The error header is "Error"
@@ -61,18 +61,18 @@ Create CSS files in the `css/` directory in this directory
     * lists.css should not have different rules for those files - the rules should apply to both
     * The lists should render without bullet points
     * Each list should have a visible border
-    * The list items should alternate between slightly darker/lighter background colors 
+    * The list items should alternate between slightly darker/lighter background colors
       * Hint: See https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child
     * The text on the page should be set to a sans-serif font
   * one file should be `details.css`
     * Style the error header and error message to stand out
     * Style the two forms so they are side-by-side
-    * Each form has the text input and label above their button 
+    * Each form has the text input and label above their button
 
 #### Special Requirements
 * Only one id attribute on a page
   * That id attribute is on a high level container and not on an internal element
 * Use semantic HTML where possible
 * Be sure to follow the best practices listed in class
-* Be sure to follow the requirements listed in the work/ directory in your repo 
+* Be sure to follow the requirements listed in the work/ directory in your repo
 * Do not use any JS (client-side OR server-side) - this should HTML and CSS only
