@@ -26,7 +26,7 @@ Create three HTML files in this directory
     * the page will list "Star Students"
     * 5 "students" will be listed (you make up their names)
     * Each student name should be link to `details.html` (using a RELATIVE path) with an `id=somenumber` as a query param (you make up the value of 'somenumber')
-      * Notsser url
+      * Note that because our files are static this query param won't show any visual difference on the page, only in the browser url
   * one file is `cats.html`
     * it loads the lists.css CSS file below using an ABSOLUTE path (but not fully qualified URL)
       * you will have to manage the path when loading the file since the css files are in a directory

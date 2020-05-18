@@ -8,20 +8,23 @@
   <h1 class="error-header">Error!</h1>
   <body>
     <p class="error-header">Sorry, I haven't learned dynamic content yet</p>
-    <div class="choose-student">
-      <form class="favorite-student" action="" method="get">
-        <label for="student-name">who is your favorite student?</label><br>
-        <input type="text" name="student-name" id="student-name">
-        <input type="submit" name="" value="See Star Students">
-      </form>
+    <div class="container">
+      <div class="choose-student">
+        <form class="favorite-student" action="/students.html" method="get">
+          <label for="favorite">who is your favorite student?</label><br>
+          <input type="text" name="favorite" id="favorite">
+          <input type="submit" name="" value="See Star Students">
+        </form>
+      </div>
+      <div class="choose-cat">
+        <form class="favorite-cat" action="/cats.html" method="get">
+          <label for="cat-name">which is your favorite cat?</label><br>
+          <input type="text" name="cat-name" id="cat-name">
+          <input type="submit" name="" value="See Star Cats">
+        </form>
+      </div>
     </div>
-    <div class="choose-cat">
-      <form class="favorite-cat" action="" method="get">
-        <label for="cat-name">which is your favorite cat?</label><br>
-        <input type="text" name="cat-name" id="cat-name">
-        <input type="submit" name="" value="See Star Cats">
-      </form>
-    </div>
+
   </body>
 
 
