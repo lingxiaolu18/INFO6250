@@ -1,0 +1,26 @@
+.error-header {
+  color: red;
+  text-align: center;
+  background-color: #000;
+}
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+
+}
+
+.choose-student {
+  width: 15%;
+  background-color: #c3edea;
+}
+
+.choose-cat {
+  width: 15%;
+  background-color: #fc7e2f;
+}

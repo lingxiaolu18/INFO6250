@@ -1,0 +1,9 @@
+.list{
+  border: 1px solid;
+  background-color: pink;
+  display: flex;
+  justify-content: space-around;
+}
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+}
