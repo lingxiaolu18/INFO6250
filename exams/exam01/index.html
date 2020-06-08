@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Word Guess!</title>
+    <link rel="stylesheet" href="index.css">
+
+  </head>
+  <body>
+    <div class="header">
+      <h1>Welcome to Word Guess!</h1>
+    </div>
+    <p class="wordList"></p>
+    <div class="form">
+      <form class="input" action="/" method="post">
+        <label for="guess">Take your guess:</label>
+        <input type="text" name="guess" value="">
+        <input type="submit" name="guess" value="Submit!">
+      </form>
+    </div>
+
+      <p class="guesses"></p>
+      <p class="counter"></p>
+      <p class="valid-or-not"></p>
+
+
+
+  </body>
+  <script src="server.js" charset="utf-8"></script>
+</html>
