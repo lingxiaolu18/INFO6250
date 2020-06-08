@@ -2,7 +2,7 @@
 /* DO NOT MODIFY EXCEPT WHERE ALLOWED */
 module.exports = compare; // DO NOT MODIFY - USED FOR TESTING
 
-function compare( word, guess ) {  // DO NOT MODIFY
+function compare(word, guess) {  // DO NOT MODIFY
 
 
 /* YOU MAY MODIFY THE LINES BELOW */

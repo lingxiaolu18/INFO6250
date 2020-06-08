@@ -5,9 +5,11 @@ const app = express();
 const PORT = 3000;
 const game = require('./words');
 const UserGusses = [];
-const RandomWord = game[Math.floor((Math.random() + 1)*game.length)];
+const RandomWord = game[Math.floor((Math.random()*game.length + 1))];
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
+
+console.log(`The random word is: ${RandomWord}`);
 app.get('/', function(req, res){
   res.send(`
     <h1 class="header">Welcome to Word Guess!
@@ -25,18 +27,29 @@ app.get('/', function(req, res){
     `);
 });
 app.post('/', function(req, res){
-  console.log(req.body.guess[0]);
-  if(game.includes(req.body.guess[0])){
-    UserGusses.push(req.body.guess[0]);
-    // console.log(UserGusses);
-    res.send(`
-      <div>
-      <p>this is your ${UserGusses.length} turn, take your time!</P>
-      <p>Your guess matches${CompareResult(RandomWord, req.body.guess[0])} letters</P>
-      <p>${UserGusses}</P>
-      </div>
-      <a href="/">Take Another Guess</a>
-      `);
+  // console.log(req.body.guess[0]);
+  const input = req.body.guess[0].toUpperCase();
+  if(game.includes(input)){
+    UserGusses.push(input);
+    let matched = CompareResult(RandomWord, input);
+    if(matched < RandomWord.length){
+      res.send(`
+        <div>
+        <p>this is your ${UserGusses.length} turn, take your time!</P>
+        <p>Your guess matches ${matched} letters</P>
+        <p>${UserGusses}</P>
+        </div>
+        <a href="/">Take Another Guess</a>
+        `);
+    }
+    else{
+      res.send(`
+        <div>
+        <p>You did it! You took ${UserGusses.length} guesses to finish!</P>
+        <a href="/">Start A New Game</a>
+        </div>
+        `);
+    }
   }
   else{
     res.send(`
@@ -48,4 +61,4 @@ app.post('/', function(req, res){
       `);
   }
 });
-app.listen(PORT, ()=> console.log(`http://localhost:${PORT}`));
+app.listen(PORT, ()=> console.log(`listening to port ${PORT}`));
