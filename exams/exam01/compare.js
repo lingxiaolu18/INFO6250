@@ -25,7 +25,7 @@ function compare(word, guess) {  // DO NOT MODIFY
   }
 
   for(let i = 0; i < guessL.length; i++){
-    var char = guessL.charAt(i);
+    let char = guessL.charAt(i);
     if(obj.hasOwnProperty(char)){
       if(obj[char] > 0){
         obj[char] --;
@@ -33,7 +33,7 @@ function compare(word, guess) {  // DO NOT MODIFY
     }
   }
 
-  var sum = 0;
+  let sum = 0;
 
   for(let value of Object.values(obj)){
     sum += value;
