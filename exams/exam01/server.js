@@ -1,19 +1,19 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const CompareResult = require('./compare');
+const CompareResult = require('./compare'); //invoke compare API from compare.js
 const app = express();
 const PORT = 3000;
-const game = require('./words');
+const game = require('./words'); //word comes from words.js
 
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 
-const userData = {};
+const userData = {}; //userData is an object which stores all user information
 
 
-
+//Stringfy word bank
 let ListString = "";
 for(let i = 0; i < game.length; i++){
   if(i % 4 === 0) ListString += "\n";
@@ -39,13 +39,12 @@ function generatePlayer(id){
 
 app.get('/', function(req, res){
   let id = generateId();
+  //if this random generated id already been used, keep generate new id until it haven't been used
   while(userData[id]){
     id = generateId();
   }
   generatePlayer(id);
-
-
-
+  console.log("current user id is: " + id + ", secret word is: " + userData[id].secretWord); //show user id with a specific word to guess in terminal
   res.send(`
     <!DOCTYPE html>
     <html lang="en" dir="ltr">
