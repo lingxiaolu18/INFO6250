@@ -1,0 +1,60 @@
+body{
+  font-family: 'Sriracha', cursive;
+  text-align: center;
+}
+
+.header{
+  text-align: center;
+  color: #fc7e2f;
+}
+
+.list-header{
+  text-align: center;
+  color: #204051;
+}
+
+.word-list{
+color: #726a95;
+max-width: 640px;
+display: flex;
+margin: inherit;
+}
+
+.wordList{
+  margin: auto;
+  color:#63b8ee;
+}
+.submit {
+	box-shadow:inset 0 1px 0 0 #bee2f9;
+	background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+	background-color:#63b8ee;
+	border-radius:6px;
+	border:1px solid #3866a3;
+	display:inline-block;
+	cursor:pointer;
+	color:#14396a;
+	font-family:Georgia;
+	font-size:15px;
+	font-weight:bold;
+	font-style:italic;
+	padding:4px 9px;
+	text-decoration:none;
+	text-shadow:0 1px 0 #7cacde;
+}
+.submit:hover {
+	background:linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+	background-color:#468ccf;
+}
+.submit:active {
+	position:relative;
+	top:1px;
+}
+.try{
+  color:#63b8ee;
+}
+.success{
+  color: green;
+}
+.invalid{
+  color:red;
+}
