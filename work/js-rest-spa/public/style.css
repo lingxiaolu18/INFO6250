@@ -6,3 +6,40 @@ img{
 h1{
   color: red;
 }
+
+
+body{
+  display: block;
+  text-align: center;
+  background-color: #c3edea;
+}
+
+.inventory-list{
+  display: block;
+  list-style-type: none;
+  text-align: center;
+}
+span{
+  margin: auto;
+  padding: 30px;
+}
+
+.btn{
+  display: block;
+  margin: auto;
+}
+.name{
+  margin: auto;
+}
+.quantity{
+  margin: auto;
+}
+li{
+  border: 2px solid green;
+  margin: auto;
+  text-align: center;
+}
+
+li:hover{
+  background-color: yellow;
+}

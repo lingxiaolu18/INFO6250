@@ -110,12 +110,14 @@ const createListItem = function(id, name, quantity){
   const nameHolder = document.createElement('span');
   nameHolder.innerText = name;
   nameHolder.className = "name";
-  // newItem.className = "listItem";
+  newItem.className = "listItem";
   const quantityHolder = document.createElement('span');
   quantityHolder.innerText = quantity;
   quantityHolder.className = "quantity";
   const update = document.createElement('button');
   const remove = document.createElement('button');
+  update.className = "btn";
+  remove.className = "btn";
   remove.innerText = "x";
   update.innerText = 'Update';
   document.querySelector('.inventory-list').appendChild(newItem);
