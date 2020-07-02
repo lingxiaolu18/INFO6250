@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="userLogin">
+      <form class="" action="/session" method="post">
+        <label for="">User Name:</label>
+        <input class="userName" type="text" name="userId" value="">
+        <button class="login" type="submit" name="userId">login</button>
+      </form>
+    </div>
+
+    <h1 class="errorMessage"></h1>
+
+    <form class="" action="/session" method="get">
+      <button class="logout" type="submit" name="button">Logout</button>
+    </form>
+
+
+<div class="container">
+
+  <h2>Inventory Management</h1>
+    <img src= inventory.jpg alt="pic">
+
+    <div class="add-item">
+      <form class="add-item" action="index.html" method="post">
+        <label for="name">item name:</label>
+        <input class="itemName" type="text" name="name" value="">
+        <label for="quantity">quantity:</label>
+        <input class="itemQuantity"type="text" name="quantity" value="0">
+        <button class="add-button" type="button" name="add">Add</button>
+      </form>
+    </div>
+
+    <div class="container">
+      <ul class="inventory-list">
+        <li class="loading">Loading...</li>
+
+      </ul>
+    </div>
+
+</div>
+  <script src="client.js" charset="utf-8"></script>
+  <!-- <script src="login.js" charset="utf-8"></script> -->
+  </body>
+
+</html>
