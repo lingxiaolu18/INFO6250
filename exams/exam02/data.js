@@ -1,18 +1,6 @@
 //jshint esversion:6
-
 const users = {};
 const recipes = {};
-/*
-recipes  =
-{recipeId :
-  {
-  userName : String,
-  recipeName(title) : String,
-  ingredients: String,
-  instructions: String
-}}
-*/
-
 recipes[1] = {
   userName: 'Admin',
   recipeName: 'Noodles🍜',
@@ -37,14 +25,12 @@ recipes[4] = {
   ingredients: '🍗',
   instructions: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent condimentum sollicitudin nisl vel cursus. Morbi iaculis ultrices porttitor. Aliquam erat volutpat. Aliquam nec velit tristique, blandit erat et, imperdiet turpis. Sed gravida placerat rutrum. Pellentesque iaculis nunc ex, et gravida dui tincidunt id. Suspendisse imperdiet magna at dignissim pellentesque. Suspendisse a justo pharetra, laoreet felis sodales, pulvinar nibh. Vestibulum felis velit, fermentum in massa tincidunt, hendrerit feugiat lectus.'
 };
-
 recipes[5] = {
   userName: 'Admin',
   recipeName: 'Fries🍟',
   ingredients: '🥔',
   instructions: 'Cras neque lacus, finibus et leo a, dapibus dignissim ex. Aliquam erat volutpat. Curabitur nec elit vel odio molestie auctor ac id nibh. Vestibulum lobortis, enim sed vestibulum pharetra, erat eros fringilla mi, eget congue nisi sapien eu odio. Aenean ullamcorper tortor et dui feugiat dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam fringilla sapien ac ligula placerat bibendum. Duis congue, tellus id varius aliquam, turpis est porta sapien, a suscipit lacus neque eget diam. Ut sagittis nulla lobortis ornare luctus. Fusce in dolor auctor, dictum tortor ac, convallis nisl. Etiam nibh enim, aliquet ut neque vitae, lobortis tristique turpis. Proin a nunc tincidunt, pellentesque quam vel, pretium lacus. Duis libero risus, pellentesque eget lectus a, sagittis auctor tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae'
 };
-
 module.exports = {
   users,
   recipes,

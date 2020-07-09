@@ -4,7 +4,6 @@ body{
   background-color: #c3edea;
   text-align: center;
 }
-
 .status{
   color: red;
 }
@@ -20,7 +19,7 @@ button{
 	font-weight:bold;
 	padding:6px 15px;
 	text-decoration:none;
-	text-shadow:0px 1px 50px #3d768a;
+	text-shadow:0 1px 50px #3d768a;
 }
 button:hover {
 	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
@@ -30,20 +29,15 @@ button:active {
 	position:relative;
 	top:1px;
 }
-
 .recipes{
   list-style: none;
 }
-
-
 .cuisine{
   color: #ea907a;
 }
-
 .create-recipt{
   display: block;
 }
-
 .title{
   clear: left;
 }

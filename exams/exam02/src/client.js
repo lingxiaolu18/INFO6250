@@ -12,8 +12,6 @@ const appState = {
   isLoggedIn:false,
   error:''
 };
-
-
 function renderLogin(showLogIn){
   const login = document.querySelector('.login');
   if(showLogIn){
@@ -26,7 +24,6 @@ function renderLogin(showLogIn){
     login.innerHTML = ``;
   }
 }
-
 function renderLogout(showLogOut){
   const logout = document.querySelector('.logout');
   if(showLogOut){
@@ -38,7 +35,6 @@ function renderLogout(showLogOut){
     logout.innerHTML = ``;
   }
 }
-
 function renderNewRecipeButton(){
   const createRecipe = document.querySelector('.create-recipe');
     createRecipe.innerHTML = `
@@ -59,9 +55,6 @@ function renderNewRecipeButton(){
       }
     });
 }
-
-
-
 function renderTextArea(){
   const createRecipe = document.querySelector('.create-recipe');
   const titleText = document.querySelector('.title');
@@ -89,19 +82,13 @@ function renderTextArea(){
     });
   });
 }
-
-
 const homeButton = document.querySelector('.to-home');
 homeButton.addEventListener('click', (e)=>{
   renderPage(-1);
 });
-
-
 function renderErrors(text){
   document.querySelector('.status').innerHTML = text;
 }
-
-
 function renderRecipes(){
   fetchAllRecipes()
   .then((response)=>{
@@ -112,7 +99,6 @@ function renderRecipes(){
     }
   });
 }
-
 function renderRecipe(recipeId){
   document.querySelector('.recipes').innerHTML = '';
   fetchRecipe(recipeId)
@@ -124,9 +110,6 @@ function renderRecipe(recipeId){
       <p>Instructions: ${response.instructions}</p>`;
   });
 }
-
-
-
 function renderPage(flag){
   if(!appState.isLoggedIn){
     renderLogin(true);
@@ -144,8 +127,6 @@ function renderPage(flag){
   }
   renderErrors(appState.error);
 }
-
-
 const recipesList= document.querySelector('.recipes');
 recipesList.addEventListener('click', (e)=>{
   const eventTarget = event.target;
@@ -155,8 +136,6 @@ recipesList.addEventListener('click', (e)=>{
     }
   }
 });
-
-
 const login = document.querySelector('.login');
 login.addEventListener('click', (e)=>{
   if(!e.target.classList.contains('to-login')){
@@ -174,8 +153,6 @@ login.addEventListener('click', (e)=>{
     renderPage(-1);
   });
 });
-
-
 const logout = document.querySelector('.logout');
 logout.addEventListener('click', (e)=>{
   if(!e.target.classList.contains('to-logout')){
