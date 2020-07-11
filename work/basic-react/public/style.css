@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+}
+
+
+.question{
+    color: cornflowerblue;
+}
+
+.boxes{
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    left: 40%;
+
+}
+
+.single-choice{
+    margin-left: 20px;
+}
+
+.single-choice:hover{
+    background-color: cyan;
+}
+
+button{
+    margin-top: 50px;
+    margin-right: auto;
+}
