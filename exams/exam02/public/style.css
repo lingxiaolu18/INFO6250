@@ -1,0 +1,49 @@
+body{
+  color: black;
+  font-size: 50px;
+  background-color: #c3edea;
+  text-align: center;
+}
+.status{
+  color: red;
+}
+button{
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:6px 15px;
+	text-decoration:none;
+	text-shadow:0 1px 50px #3d768a;
+}
+button:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+.recipes{
+  list-style: none;
+}
+.cuisine{
+  color: #ea907a;
+}
+.create-recipt{
+  display: block;
+}
+.title{
+  clear: left;
+}
+.ingredients{
+  clear: left;
+}
+.instructions{
+  clear: left;
+}
