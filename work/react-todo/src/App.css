@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+body{
+  text-align: center;
+}
+
+ul{
+  list-style: none;
+}
+
+.light{
+  background-color: beige;
+  color: orange;
+}
+
+.dark{
+  background-color: black;
+  color: greenyellow;
+}
+
+.colorful{
+  background: linear-gradient(to bottom right, blue, pink);
+  color: yellow;
+}
+
+
+
+.true{
+  visibility: hidden;
+}
