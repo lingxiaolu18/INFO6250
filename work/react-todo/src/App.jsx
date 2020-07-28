@@ -162,8 +162,7 @@ function App() {
       }
       else return 0;
     }
-    let temp = tasks.sort(compare);
-    setTasks([...temp]);
+    setTasks([...tasks.sort(compare)]);
   }
 
   const sortDescending = () => {
@@ -176,8 +175,7 @@ function App() {
       }
       else return 0;
     }
-    let temp = tasks.sort(compare);
-    setTasks([...temp]);
+    setTasks([...tasks.sort(compare)]);
   }
 
   const sortDone = () => {
@@ -190,8 +188,7 @@ function App() {
       }
       else return 0;
     }
-    let temp = tasks.sort(compare);
-    setTasks([...temp]);
+    setTasks([...tasks.sort(compare)]);
   }
 
   const sortNotDone = () => {
@@ -204,8 +201,7 @@ function App() {
       }
       else return 0;
     }
-    let temp = tasks.sort(compare);
-    setTasks([...temp]);
+    setTasks([...tasks.sort(compare)]);
   }
 
   const addTaskBox = isLoggedIn? <AddTaskBox userName = {userName} callAddTaskService = {callAddTaskService}/> : <Login callLoginService = {callLoginService}/>;
