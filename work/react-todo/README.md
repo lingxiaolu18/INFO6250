@@ -28,7 +28,7 @@ The goal is to:
   - Require login
   - Show the current todo list
     - Each task has a name and a "done" boolean
-  - All the addition and removal of items from the todo list
+  - Allow the addition and removal of items from the todo list
   - Allow marking a task as done or not done
   - Allow editing of a task text
   - Be attractive, usable, and understandable
